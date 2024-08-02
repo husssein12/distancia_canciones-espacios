@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Canciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recomendador de Canciones</h1>
+        <p>Ingresa las características de una canción para obtener recomendaciones de canciones similares.</p>
+        <form id="song-form">
+            <label for="tempo">Tempo (BPM):</label>
+            <input type="number" id="tempo" name="tempo" required>
+            
+            <label for="pitch">Pitch (0-100):</label>
+            <input type="number" id="pitch" name="pitch" required>
+            
+            <label for="duration">Duración (segundos):</label>
+            <input type="number" id="duration" name="duration" required>
+            
+            <button type="submit">Buscar Canciones Similares</button>
+        </form>
+        <h2>Resultados</h2>
+        <ul id="results"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
